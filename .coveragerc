@@ -1,0 +1,34 @@
+[run]
+# Only measure coverage on the production modules
+source =
+    .
+omit =
+    # Old / experimental app scripts
+    app.py
+    app1.py
+    app2_latestw.py
+    app_incomplete.py
+    app_mightcrashafterlogin.py
+    app_working.py
+    app_Working_great_with_login.py
+    appf.py
+    backend.py
+    backend1.py
+    backend_user1.py
+    backend_user_loop.py
+    progress_tracker3.py
+    langraph_agent_1.py
+    langraph_agent_openai.py
+
+    # Bytecode cache
+    */__pycache__/*
+    # Tests themselves
+    tests/*
+    # Virtual envs
+    */venv/*
+    */.venv/*
+    */multiagent_venv/*
+
+[report]
+show_missing = True
+skip_covered = True
