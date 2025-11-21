@@ -11,3 +11,4 @@ psutil
 plotly
 streamlit-ace
 streamlit_lottie
+supabase
