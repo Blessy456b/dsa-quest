@@ -17,6 +17,8 @@ from langraph_agent import generate_learning_content
 from progress_tracker import get_progress_tracker
 from backend_user import sign_in, sign_up, sign_out, get_current_user
 
+st.write("DEBUG → Secrets Loaded:", list(st.secrets.keys()))
+st.write("DEBUG → GROQ:", st.secrets.get("GROQ_API_KEY", "(missing)"))
 # Page configuration (must be before other Streamlit calls)
 st.set_page_config(
     page_title="DSA Quest - Master Coding with Fun!",
