@@ -10,3 +10,4 @@ Pillow
 psutil
 plotly
 streamlit-ace
+streamlit_lottie
