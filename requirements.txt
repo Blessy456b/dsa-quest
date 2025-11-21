@@ -1,0 +1,11 @@
+langgraph>=0.1.0
+openai
+streamlit
+pydantic
+pytest
+pytest-cov
+docker
+python-dotenv
+Pillow
+psutil
+guardrails-ai==0.5.0

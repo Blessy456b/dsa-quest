@@ -1,0 +1,15 @@
+[
+{
+"id": "1",
+"title": "Two Sum",
+"difficulty": "Easy",
+"topic": "Arrays",
+"description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+"examples": [{"input": "nums = [2,7,11,15], target = 9", "output": "[0,1]"}],
+"hints": ["Use hashing", "One-pass hashmap"],
+"test_cases": [
+{"input": {"nums": [2,7,11,15], "target": 9}, "expected": [0,1]},
+{"input": {"nums": [3,2,4], "target": 6}, "expected": [1,2]}
+]
+}
+]
