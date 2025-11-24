@@ -167,32 +167,28 @@ dsa-quest/
 │── progress_tracker.py      # Multi-user XP, streaks, badge logic  
 │── backend_user.py          # Supabase auth & user persistence  
 │── requirements.txt  
-│── README.md  
-├── test_dsa_data.py
-├── test_guardrails.py
-├── tests
-│   ├── test_backend_user1.py
-│   ├── test_backend_user.py
-│   ├── test_langraph_agent_live.py
-│   ├── test_langraph_agent.py
-│   ├── test_langraph_agent_semantic.py
-│   ├── test_progress_tracker.py
-│   └── test_retry_utils.py
-├── tests_safety
-│   ├── test_harmful_inputs.py
-│   ├── test_prompt_injection.py
-│   └── test_refusal_cases.py
-├── user_data
-│   └── user_data_default_user.json
-└── utils
-    ├── guardrails.py
-    ├── healthcheck.py
-    ├── logging_config.py
-    └── retry_utils.py
-
-
-
-
+│── README.md    
+├── test_dsa_data.py  
+├── test_guardrails.py  
+├── tests    
+│   ├── test_backend_user1.py  
+│   ├── test_backend_user.py  
+│   ├── test_langraph_agent_live.py  
+│   ├── test_langraph_agent.py  
+│   ├── test_langraph_agent_semantic.py  
+│   ├── test_progress_tracker.py  
+│   └── test_retry_utils.py  
+├── tests_safety  
+│   ├── test_harmful_inputs.py  
+│   ├── test_prompt_injection.py  
+│   └── test_refusal_cases.py  
+├── user_data  
+│   └── user_data_default_user.json  
+└── utils  
+    ├── guardrails.py  
+    ├── healthcheck.py  
+    ├── logging_config.py  
+    └── retry_utils.py  
 
 ###  🧩 2. Create Virtual Environment (Recommended)
 ```bash
