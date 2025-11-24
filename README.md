@@ -32,7 +32,7 @@ Instead of passive reading, learners experience:
 - 🔒 Individual user sandboxes thanks to Supabase authentication
 - 🛡️ Safety guardrails and a complete testing suite
 
-# 2. Motivation
+# 🧠 Motivation
 
 **Gamification** is not decoration — it is cognitive engineering.
 
@@ -386,7 +386,7 @@ https://platform.openai.com/docs
 - Plotly Visualization Library
 https://plotly.com/python/
 
-# Licensing and Usage Rights
+# 🔑 Licensing and Usage Rights
 This project is released under the MIT License, which allows:
 
 - Free use, modification, and distribution
@@ -394,11 +394,11 @@ This project is released under the MIT License, which allows:
 - Inclusion in open-source or proprietary systems
 - Users must simply retain the original copyright and license notice.
 
-# Acknowledgements
+# 🧩 Acknowledgements
 Developed by Blessy Thomas
 Built with curiosity using Streamlit, LangGraph, and Supabase technologies for Ready Tensor certification.
 
-# Contact
+# ✨ Contact
 For queries
 github : 
 https://github.com/Blessy456b
