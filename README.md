@@ -113,7 +113,7 @@ Beyond games, the platform extends gamification into the problem-solving workflo
 ![achievements.png](images/achievements.png)
 #### Streaks
 ![streak.png](images/streak.png)
-# AI-Assisted Learning Modules
+# 🧠 AI-Assisted Learning Modules
 To support deeper understanding, the platform integrates two distinct AI systems, each responsible for a different pedagogical objective. The first, responsible for generating stories, analogies, and learning tips, operates through a LangGraph-managed workflow executed on Groq’s ultra-low-latency inference models. This setup allows every generated explanation to pass through a structured chain that extracts concepts, creates narrative framing, simplifies technical ideas, and validates factual correctness before returning the final output to the user. This multi-step design ensures the generated content is not only engaging but also technically accurate. 
 These generate content in **3 popular programming languages : Python, Java, C++** available as radio buttons in UI.
 
@@ -122,7 +122,7 @@ These generate content in **3 popular programming languages : Python, Java, C++*
 The second AI system is embedded in the Practice Area as a logic evaluator. Unlike traditional “run code” environments, this evaluator does not execute user-submitted code. Instead, it performs a reasoning-based assessment of correctness, time complexity, missing edge cases, and algorithm design soundness. The evaluation output is structured, safe, and deterministic, fully independent of language-specific environments. It allows users practicing C++, Java, or Python to receive feedback on their logic without any of the risks associated with arbitrary code execution. This design aligns with production safety requirements and maintains the integrity of the platform.
 
 Together, these AI components transform static problem-solving into a guided learning process where explanations, reasoning feedback, and conceptual clarity support the user at every stage of progression.
-# Security, Guardrails, and Safety Controls
+# 🔒 Security, Guardrails, and Safety Controls
 
 Behind the interactive interface, the system enforces multiple layers of safety to ensure reliability and responsible AI usage. All user inputs — including arbitrary code typed into the Practice Area — undergo strict preprocessing routines. These routines scan for high-risk patterns such as file operations, subprocess calls, uncontrolled loops, and dynamic evaluation primitives. Inputs that violate these constraints are rejected with clear feedback before reaching the AI evaluator.
 
@@ -137,7 +137,7 @@ Operational safety is reinforced through retry mechanisms, controlled sampling c
 
 This layered safety design ensures that the system remains robust, transparent, and secure throughout heavy use.
 
-# Quality Assurance and Testing Strategy
+# 🛡️ Quality Assurance and Testing Strategy
 
 The production version of DSA Quest is backed by a comprehensive testing suite that covers unit modules, integrated workflows, and full end-to-end flows. Core logic — such as progress tracking, authentication handling, step progression, and badge assignment — is validated through unit tests that simulate typical user interactions. These tests ensure that all counters, completion flags, boundary cases, and XP calculations behave deterministically.
 ### Unit Testing
