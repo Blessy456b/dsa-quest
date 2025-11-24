@@ -1,4 +1,4 @@
-# Abstract
+# ✍️ Abstract
 **DSA Quest** is a  multi-agent learning platform designed to transform how developers prepare for Data Structures & Algorithms. What began as a prototype — a collaborative LLM-based reasoning workflow — has evolved into a resilient, secure, test-driven system with a full user interface, authenticated user isolation, safety guardrails, multi-agent reasoning, gamified learning, and real-time AI evaluation.
 
 At its core, the system blends gamification, LLM-powered storytelling, and structured problem-solving to increase retention, engagement, and conceptual understanding. The result is a polished agentic application engineered to be used by real learners, not just as a demonstration.
@@ -53,7 +53,7 @@ Our motivations were:
 
 This project demonstrates how agentic AI systems can move beyond prototypes into fully productionized systems — with safety, testing, resilience, and real usability at their core.
 
-# System Architecture
+# 🧩 System Architecture
 The system is built on three cooperating layers:
 
 ### A. Application Layer (Streamlit UI)
@@ -91,13 +91,13 @@ A Supabase instance serves as the authentication and persistence backbone, ensur
 ![signup.png](images/signup.png)
 
 Each page of the app — the Problem Browser, Coding Games suite, Profile dashboard, Achievements hub, and Practice Area — is powered by clear, modular components to keep the system maintainable and testable. Every unit of logic is self-contained, enabling targeted testing and predictable behavior under failure. Together, these design principles allow DSA Quest to function as a cohesive, production-ready learning platform that remains extensible for future features.
-# Model Selection Rationale
+#  🧪 Model Selection Rationale
 The decision to build the system using **Groq and LangGraph** was guided by clear engineering requirements. Groq provides exceptionally low-latency inference with stable throughput under load, allowing the system to offer interactive AI features — such as instant story generation and code evaluation — without latency spikes. The deterministic performance profile reduces timeout complexity and strengthens the system’s resilience strategy.
 
 LangGraph was chosen because it allows structured multi-step reasoning in a controlled graph environment. Unlike one-off LLM calls, LangGraph enables composition of workflows where output quality can be validated at each node. This is essential for producing structured story/analogy output and ensuring that malformed AI responses are detected early. Its ability to define strict schemas, fallback nodes, and execution guards makes it ideal for production systems where reliability and predictability take priority.
 
 Together, Groq and LangGraph form a stable and efficient AI pipeline that keeps the platform responsive, safe, and easy to maintain — meeting the exact requirements of the  production readiness.
-# Gamified Learning Experience
+# 🎮 Gamified Learning Experience
 
 The four integrated mini-games serve as short-form reinforcement tools that help users internalize concepts in a low-pressure environment. Each game targets a different cognitive dimension: speed recognition, conceptual pairing, memory retention, and logic sequencing. These games do not replace problem-solving but support it by strengthening the user’s familiarity with terminology, patterns, and common DSA structures. All gameplay events are locally contained and do not interfere with the core problem-solving workflow, but they contribute to XP to ensure motivational continuity across the application.
 ### Game 1: Quiz 
@@ -281,14 +281,14 @@ SUPABASE_URL=...
 SUPABASE_KEY=...
 GROQ_API_KEY=...
 ```
-### 4. Deploy 🚀
+### 4. Deploy 
 
 Your app becomes publicly accessible at:
 ```bash
 https://<appname>.streamlit.app
 ```
 
-### 🧪 Running Tests (Module 3 Requirement)
+### Running Tests (Module 3 Requirement)
 
 We include:
 - Unit tests
