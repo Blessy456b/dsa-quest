@@ -4,7 +4,7 @@
 At its core, the system blends gamification, LLM-powered storytelling, and structured problem-solving to increase retention, engagement, and conceptual understanding. The result is a polished agentic application engineered to be used by real learners, not just as a demonstration.
 ### Home Page
 
-![main_page.png](main_page.png)
+![images/main_page.png](main_page.png)
 
 ### Problem Browser
 
