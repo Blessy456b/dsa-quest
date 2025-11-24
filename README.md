@@ -8,7 +8,7 @@ At its core, the system blends gamification, LLM-powered storytelling, and struc
 
 ### Problem Browser
 
-![Screenshot from 2025-11-22 15-27-36.png](Screenshot%20from%202025-11-22%2015-27-36.png)
+![Screenshot from 2025-11-22 15-27-36.png](images/Screenshot%20from%202025-11-22%2015-27-36.png)
 
 # 🎮 Introduction
 
@@ -63,7 +63,7 @@ The system is built on three cooperating layers:
 The architecture of the DSA Quest application is designed to support scalable multi-user access, real-time interactivity, safe LLM-generated content, and an integrated learning experience that blends problem-solving, gamification, and AI-assisted guidance. Each layer of the system is built to operate independently while working cohesively to ensure reliability and production-grade performance.
 
 At the foundation of the platform is a Streamlit-based user interface, which manages rendering, session separation, and real-time state updates. This UI layer interacts with a set of well-structured backend modules responsible for user authentication, progress tracking, problem browsing, AI-generated educational content, and interactive coding games. 
-![Screenshot from 2025-11-23 12-47-52.png](Screenshot%20from%202025-11-23%2012-47-52.png)
+![Screenshot from 2025-11-23 12-47-52.png](images/Screenshot%20from%202025-11-23%2012-47-52.png)
 
 The learning experience itself is driven by two key AI components. The first is a story and analogy generator, which uses Groq-powered Llama models via LangGraph. This module produces concept-focused, error-filtered explanations and learning narratives optimized for clarity. The second is the LLM-based code evaluator, a standalone evaluator that safely analyzes the logic of user-submitted solutions in any language without executing the code. It uses strictly defined prompts, guards, sanitization routines, and controlled sampling settings to ensure both safety and determinism.
 Two AI Subsystems Inside :
@@ -77,7 +77,7 @@ Used in the Problem Browser:
 ✔ Debug-traceable
 ✔ Fallback templates ensure reliability
 
-![story_geb.png](story_geb.png)
+![story_geb.png](images/story_geb.png)
 ### 2. LLM Code Evaluation System (Static Review, No Execution)
 
 Used in the Practice Area:
@@ -85,10 +85,10 @@ Used in the Practice Area:
 ✔ Works with Python, Java, C++ or pseudocode
 ✔ Deep comments on logic, structure, clarity
 ✔ Suggests fixes and improvement. Sandboxed prompts and deterministic temperature settings
- ![ai_evaluation.png](ai_evaluation.png)
+ ![ai_evaluation.png](images/ai_evaluation.png)
 
 A Supabase instance serves as the authentication and persistence backbone, ensuring that every user operates in an isolated environment where their data — solved problems, XP history, game progress, and generated content — remains strictly scoped to their account.
-![signup.png](signup.png)
+![signup.png](images/signup.png)
 
 Each page of the app — the Problem Browser, Coding Games suite, Profile dashboard, Achievements hub, and Practice Area — is powered by clear, modular components to keep the system maintainable and testable. Every unit of logic is self-contained, enabling targeted testing and predictable behavior under failure. Together, these design principles allow DSA Quest to function as a cohesive, production-ready learning platform that remains extensible for future features.
 # Model Selection Rationale
@@ -101,23 +101,23 @@ Together, Groq and LangGraph form a stable and efficient AI pipeline that keeps 
 
 The four integrated mini-games serve as short-form reinforcement tools that help users internalize concepts in a low-pressure environment. Each game targets a different cognitive dimension: speed recognition, conceptual pairing, memory retention, and logic sequencing. These games do not replace problem-solving but support it by strengthening the user’s familiarity with terminology, patterns, and common DSA structures. All gameplay events are locally contained and do not interfere with the core problem-solving workflow, but they contribute to XP to ensure motivational continuity across the application.
 ### Game 1: Quiz 
-![quiz.png](quiz.png)
+![quiz.png](images/quiz.png)
 ### Game 2: AI based story game quiz
-![storygame.png](storygame.png)
+![storygame.png](images/storygame.png)
 ### Game 3 : Rearrange
-![rearrange.png](rearrange.png)
+![rearrange.png](images/rearrange.png)
 ### Game 4 : Filll in the blanks
-![fill_in_d_blanks.png](fill_in_d_blanks.png)
+![fill_in_d_blanks.png](images/fill_in_d_blanks.png)
 Beyond games, the platform extends gamification into the problem-solving workflow itself. Users accumulate XP as they progress through Striver’s A-Z curriculum, unlocking badges that reflect not just quantity but category-specific mastery. The streak system encourages consistent engagement while the Profile and Achievements pages provide clear visibility into long-term progression. Together, these elements convert the traditionally solitary experience of learning DSA into a structured, rewarding journey without compromising academic rigor.
 #### Achievements and Badges
-![achievements.png](achievements.png)
+![achievements.png](images/achievements.png)
 #### Streaks
-![streak.png](streak.png)
+![streak.png](images/streak.png)
 # AI-Assisted Learning Modules
 To support deeper understanding, the platform integrates two distinct AI systems, each responsible for a different pedagogical objective. The first, responsible for generating stories, analogies, and learning tips, operates through a LangGraph-managed workflow executed on Groq’s ultra-low-latency inference models. This setup allows every generated explanation to pass through a structured chain that extracts concepts, creates narrative framing, simplifies technical ideas, and validates factual correctness before returning the final output to the user. This multi-step design ensures the generated content is not only engaging but also technically accurate. 
 These generate content in **3 popular programming languages : Python, Java, C++** available as radio buttons in UI.
 
-![Screenshot from 2025-11-23 20-51-16.png](Screenshot%20from%202025-11-23%2020-51-16.png)
+![Screenshot from 2025-11-23 20-51-16.png](images/Screenshot%20from%202025-11-23%2020-51-16.png)
 
 The second AI system is embedded in the Practice Area as a logic evaluator. Unlike traditional “run code” environments, this evaluator does not execute user-submitted code. Instead, it performs a reasoning-based assessment of correctness, time complexity, missing edge cases, and algorithm design soundness. The evaluation output is structured, safe, and deterministic, fully independent of language-specific environments. It allows users practicing C++, Java, or Python to receive feedback on their logic without any of the risks associated with arbitrary code execution. This design aligns with production safety requirements and maintains the integrity of the platform.
 
@@ -129,9 +129,9 @@ Behind the interactive interface, the system enforces multiple layers of safety 
 On the AI output side, every model response passes through validation filters and structured parsing to eliminate malformed content, hallucinations, or inconsistencies. The LangGraph workflow includes checkpoints that reject outputs lacking required sections or violating formatting rules. Groq models were selected specifically for their deterministic latency and predictable behavior at scale, which helps reduce timeout risks and simplify failure handling.
 Guardrails were added and tested for safety, full app testing and these were modified from producing harmful content to harmless content.
 ### Before Safety Tests
-![Screenshot from 2025-11-21 11-34-49.png](Screenshot%20from%202025-11-21%2011-34-49.png)
+![Screenshot from 2025-11-21 11-34-49.png](images/Screenshot%20from%202025-11-21%2011-34-49.png)
 ### After Safety Tests
-![Screenshot from 2025-11-21 12-23-25.png](Screenshot%20from%202025-11-21%2012-23-25.png)
+![Screenshot from 2025-11-21 12-23-25.png](images/Screenshot%20from%202025-11-21%2012-23-25.png)
 
 Operational safety is reinforced through retry mechanisms, controlled sampling configurations, timeout caps, and error-aware fallbacks. Every LLM call and external tool interaction is internally wrapped with logging hooks that capture exceptions, delays, and validation failures for later inspection. Even in cases where AI components fail, the platform maintains stable behavior by returning meaningful error messages instead of letting the system degrade unpredictably.
 
@@ -141,11 +141,11 @@ Quality Assurance and Testing Strategy
 
 The production version of DSA Quest is backed by a comprehensive testing suite that covers unit modules, integrated workflows, and full end-to-end flows. Core logic — such as progress tracking, authentication handling, step progression, and badge assignment — is validated through unit tests that simulate typical user interactions. These tests ensure that all counters, completion flags, boundary cases, and XP calculations behave deterministically.
 ### Unit Testing
-![Screenshot from 2025-11-21 10-41-24.png](Screenshot%20from%202025-11-21%2010-41-24.png)
+![Screenshot from 2025-11-21 10-41-24.png](images/Screenshot%20from%202025-11-21%2010-41-24.png)
 
 ### Integration Testing and Full Coverage App Test 
 
-![integration_test.png](integration_test.png)
+![integration_test.png](images/integration_test.png)
 
 Integration tests focus on interactions between the UI layer and backend modules. They verify that navigation states persist correctly across sessions, that authenticated and unauthenticated access paths behave as expected, and that AI modules return properly structured output when invoked. Additional tests simulate LLM failures, timeouts, missing fields, and malformed responses to verify the stability of fallbacks and retries.
 
