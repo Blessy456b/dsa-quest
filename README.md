@@ -159,15 +159,15 @@ cd dsa-quest
 The entire app lives inside a clean, modular folder structure:
 
 dsa-quest/
-│── app.py                   # Streamlit UI + Multi-Agent Orchestration
-│── langraph_agent.py        # Story/Analogy workflow powered by LangGraph
-│── llm_evaluator.py         # AI-powered code reviewer
-│── dsa_data.py              # Striver sheet + problem metadata
-│── games.py                   # All 4 gamified learning modes
-│── progress_tracker.py      # Multi-user XP, streaks, badge logic
-│── backend_user.py          # Supabase auth & user persistence
-│── requirements.txt
-│── README.md
+│── app.py                   # Streamlit UI + Multi-Agent Orchestration  
+│── langraph_agent.py        # Story/Analogy workflow powered by LangGraph  
+│── llm_evaluator.py         # AI-powered code reviewer  
+│── dsa_data.py              # Striver sheet + problem metadata  
+│── games.py                   # All 4 gamified learning modes  
+│── progress_tracker.py      # Multi-user XP, streaks, badge logic  
+│── backend_user.py          # Supabase auth & user persistence  
+│── requirements.txt  
+│── README.md  
 
 ###  🧩 2. Create Virtual Environment (Recommended)
 ```bash
