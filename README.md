@@ -1,16 +1,4 @@
-## 📑 Index
 
-- [Overview](#🧠-dsa-quest-gamified-dsa-learning-meets-agentic-ai-kaggle-notebook-documentation)
-- [Problem Statement](#problem-statement)
-- [Why Agents?](#why-agents----why-are-agents-the-right-solution-to-this-problem)
-- [Architecture](#overall-architechture)
-- [Setup & Installation](#setup-and-installation)
-- [Kaggle Notebook Instructions](#1-downloading-the-kaggle-notebook)
-- [Project Structure](#🧱-6-project-structure-auto-generated-by-notebook)
-- [How to Use the App](#🧑‍🏫-7-how-to-use-the-app-inside-kaggle)
-- [Troubleshooting](#%EF%B8%8F-troubleshooting-kaggle)
-- [Future Enhancements](#future-enhancements)
-- [Acknowledgements](#-11-acknowledgements)
 
 # ✍️ Abstract
 **DSA Quest** is a  multi-agent learning platform designed to transform how developers prepare for Data Structures & Algorithms. What began as a prototype — a collaborative LLM-based reasoning workflow — has evolved into a resilient, secure, test-driven system with a full user interface, authenticated user isolation, safety guardrails, multi-agent reasoning, gamified learning, and real-time AI evaluation.
