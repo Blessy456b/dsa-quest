@@ -1,5 +1,3 @@
-
-
 # ✍️ Abstract
 **DSA Quest** is a  multi-agent learning platform designed to transform how developers prepare for Data Structures & Algorithms. What began as a prototype — a collaborative LLM-based reasoning workflow — has evolved into a resilient, secure, test-driven system with a full user interface, authenticated user isolation, safety guardrails, multi-agent reasoning, gamified learning, and real-time AI evaluation.
 
@@ -191,6 +189,16 @@ dsa-quest/
     ├── healthcheck.py  
     ├── logging_config.py  
     └── retry_utils.py  
+
+### Application Entry Point
+
+The primary entry point for the application is:
+app.py
+This file initializes:
+- Streamlit UI routing
+- User authentication flow
+- Multi-agent orchestration
+- Game modules and AI evaluators
 
 ###  🧩 2. Create Virtual Environment (Recommended)
 ```bash
