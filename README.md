@@ -338,6 +338,29 @@ Now app ships with:
 - Custom Guardrail Layer – input validation + content filtering
 - Retry handlers, loop caps, and timeouts – ensures agent stability
 
+## 🔧 Maintenance, Support, and Project Lifecycle
+
+DSA Quest is designed as a maintained, extensible technical asset rather than a one-off demonstration. The project follows clear maintenance and support practices to ensure long-term usability, reliability, and ease of contribution.
+
+### Ongoing Maintenance
+The codebase is modular and version-controlled, enabling incremental improvements without disrupting existing functionality. Core components such as the multi-agent workflows, LLM evaluator, authentication layer, and gamification logic are independently testable, making future refactors and feature additions safe and predictable.
+
+Dependencies are pinned and reviewed periodically to prevent unexpected breaking changes from external libraries such as Streamlit, LangGraph, and Supabase SDKs.
+
+### Issue Tracking and Bug Fixes
+All known issues, feature requests, and enhancements are tracked through the GitHub repository. Bugs related to AI outputs, UI behavior, or authentication are reproducible through existing test cases, allowing faster resolution. Critical failures are handled gracefully through fallback logic, ensuring the application remains usable even under partial system degradation.
+
+### Updates and Feature Evolution
+The system architecture intentionally supports feature evolution. New agents, games, learning modes, or evaluation strategies can be introduced by extending existing modules without redesigning the platform. This makes DSA Quest suitable for iterative learning content expansion and curriculum updates.
+
+### Support Model
+As an open-source project, DSA Quest provides community-driven support through:
+- GitHub Issues for bug reports and feature discussions
+- Clear documentation for setup, deployment, and testing
+- Readable code structure to enable external contributions
+
+This maintenance-first approach ensures that users and contributors can rely on DSA Quest as a stable, evolving learning platform rather than a static prototype.
+
 # 🚀 Conclusion
 
 DSA Quest transforms traditional DSA learning into a gamified, AI-augmented, story-driven experience designed for real learners—not just for demonstration. Unlike static problem sheets or passive tutorials, DSA Quest brings together:
